@@ -1,3 +1,6 @@
+# Djangox Lab
+## Most Recent PR: https://github.com/Seon2020/djangox/pull/2
+
 > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
