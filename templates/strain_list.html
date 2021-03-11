@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% block content %}   
+    <h1>Strains</h1>
+    <a href="{% url 'strain_create' %}">Add a New Strain</a>
+    <ul>
+        {% for strain in object_list %}
+            <li>
+                <a href="{% url 'strain_detail' strain.pk %}">{{ strain.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

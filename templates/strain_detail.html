@@ -1,0 +1,9 @@
+{% extends 'base.html' %} 
+{% block content %}   
+    <h2>Details on {{ strain.name }}:</h2>
+    <h2>Strain Type: {{ strain.strain_type }}</h2>
+    <p>Description: {{ strain.description }}</p>
+    <h2>Smoker: {{ strain.smoker }}</h2>
+    <a href="{% url 'strain_update' strain.pk %}">Update Strain</a>
+    <a href="{% url 'strain_delete' strain.pk %}">Delete Strain</a>
+{% endblock content %}
